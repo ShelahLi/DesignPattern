@@ -4,7 +4,8 @@ public class Client_log {
     public static void main(String[] args) {
         ConfigSettingWindow configSettingWindow = new ConfigSettingWindow();
         AbstractCommand command;
-        ConfigOperator configOperator = new ConfigOperator();
+        ConfigOperator configOperator = new ConfigOperator();\
+        ConfigOperator configOperator1 = new ConfigOperator();
         //四次对配置文件进行修改
         command = new InsertCommand("增加");
         command.setConfigOperation(configOperator);
